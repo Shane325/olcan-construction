@@ -42,7 +42,7 @@ jobs:
       - deploy:
           name: Push image to docker hub
           command: |
-            docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USR_ID -p $DOCKER_HUB_PWD
+            docker login -u $DOCKER_HUB_USR_ID -p $DOCKER_HUB_PWD
             docker tag olcan-construction $DOCKER_HUB_ACCOUNT/olcan-construction:$CIRCLE_SHA1
             docker tag olcan-construction $DOCKER_HUB_ACCOUNT/olcan-construction:latest
             docker push $DOCKER_HUB_ACCOUNT/olcan-construction:$CIRCLE_SHA1
