@@ -23,7 +23,7 @@ jobs:
           command: docker build -t olcan-construction .
       - run:
           name: Start docker container
-          command: docker run -d -p 80:8080 --name olcan-construction olcan-construction
+          command: docker run -d -p 80:8443 --name olcan-construction olcan-construction
 
       # Download and cache dependencies
       - restore_cache:
