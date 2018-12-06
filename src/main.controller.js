@@ -6,12 +6,12 @@
  */
 let config = require('./config/config')
 let commonConfig = require('./config/common')
-// let homeConfig = require('./config/home')
-// let aboutConfig = require('./config/about')
-// let servicesConfig = require('./config/services')
-// let projectsConfig = require('./config/projects')
+let homeConfig = require('./config/home')
+let aboutConfig = require('./config/about')
+let servicesConfig = require('./config/services')
+let projectsConfig = require('./config/projects')
 // let projectConfig = require('./config/project')
-// let contactConfig = require('./config/contact')
+let contactConfig = require('./config/contact')
 // let HttpStatus = require('http-status-codes')
 // let MAILGUN_API_KEY = config.mailgun.api_key
 // let MAILGUN_DOMAIN = config.mailgun.domain
@@ -30,7 +30,9 @@ module.exports.getHome = (req, res) => {
   res.render('../views/pages/index', {
     css: config.lib.css,
     js: config.lib.js,
-    common: commonConfig
+    common: commonConfig,
+    title: homeConfig.title,
+    state: homeConfig.state
   })
 }
 
@@ -43,7 +45,10 @@ module.exports.getAbout = (req, res) => {
   res.render('../views/pages/about', {
     css: config.lib.css,
     js: config.lib.js,
-    common: commonConfig
+    common: commonConfig,
+    title: aboutConfig.title,
+    state: aboutConfig.state,
+    description: aboutConfig.description
   })
 }
 
@@ -56,7 +61,10 @@ module.exports.getServices = (req, res) => {
   res.render('../views/pages/services', {
     css: config.lib.css,
     js: config.lib.js,
-    common: commonConfig
+    common: commonConfig,
+    title: servicesConfig.title,
+    state: servicesConfig.state,
+    description: servicesConfig.description
   })
 }
 
@@ -69,7 +77,10 @@ module.exports.getProjects = (req, res) => {
   res.render('../views/pages/projects', {
     css: config.lib.css,
     js: config.lib.js,
-    common: commonConfig
+    common: commonConfig,
+    title: projectsConfig.title,
+    state: projectsConfig.state,
+    description: projectsConfig.description
   })
 }
 
@@ -95,7 +106,10 @@ module.exports.getContact = (req, res) => {
   res.render('../views/pages/contact', {
     css: config.lib.css,
     js: config.lib.js,
-    common: commonConfig
+    common: commonConfig,
+    title: contactConfig.title,
+    state: contactConfig.state,
+    description: contactConfig.description
   })
 }
 
