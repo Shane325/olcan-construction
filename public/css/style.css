@@ -7782,3 +7782,7 @@ CUSTOM STYLING
         padding-bottom: 5px;
     }
 }
+
+.margin-top-25 {
+  margin-top: 25px !important;
+}

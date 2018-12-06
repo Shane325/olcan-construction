@@ -5,7 +5,7 @@
  *
  */
 let config = require('./config/config')
-// let commonConfig = require('./config/common')
+let commonConfig = require('./config/common')
 // let homeConfig = require('./config/home')
 // let aboutConfig = require('./config/about')
 // let servicesConfig = require('./config/services')
@@ -29,7 +29,8 @@ let config = require('./config/config')
 module.exports.getHome = (req, res) => {
   res.render('../views/pages/index', {
     css: config.lib.css,
-    js: config.lib.js
+    js: config.lib.js,
+    common: commonConfig
   })
 }
 
@@ -41,7 +42,8 @@ module.exports.getHome = (req, res) => {
 module.exports.getAbout = (req, res) => {
   res.render('../views/pages/about', {
     css: config.lib.css,
-    js: config.lib.js
+    js: config.lib.js,
+    common: commonConfig
   })
 }
 
@@ -53,7 +55,8 @@ module.exports.getAbout = (req, res) => {
 module.exports.getServices = (req, res) => {
   res.render('../views/pages/services', {
     css: config.lib.css,
-    js: config.lib.js
+    js: config.lib.js,
+    common: commonConfig
   })
 }
 
@@ -65,7 +68,8 @@ module.exports.getServices = (req, res) => {
 module.exports.getProjects = (req, res) => {
   res.render('../views/pages/projects', {
     css: config.lib.css,
-    js: config.lib.js
+    js: config.lib.js,
+    common: commonConfig
   })
 }
 
@@ -77,7 +81,8 @@ module.exports.getProjects = (req, res) => {
 module.exports.getProject = (req, res) => {
   res.render('../views/pages/project', {
     css: config.lib.css,
-    js: config.lib.js
+    js: config.lib.js,
+    common: commonConfig
   })
 }
 
@@ -89,7 +94,8 @@ module.exports.getProject = (req, res) => {
 module.exports.getContact = (req, res) => {
   res.render('../views/pages/contact', {
     css: config.lib.css,
-    js: config.lib.js
+    js: config.lib.js,
+    common: commonConfig
   })
 }
 
