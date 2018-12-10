@@ -703,7 +703,7 @@ HEADER AND MENUS
     }
 
         .navbar-middle .navbar-brand.center > img {
-            max-height: 30px;
+            max-height: 90px;
         }
 
     .navbar-mini + .navbar-middle .navbar-brand, .logo-left .navbar-brand {
@@ -2918,7 +2918,7 @@ footer .content.container {
 
 footer img.logo {
     margin-bottom: 10px;
-    height: 25px;
+    height: 100px;
 }
 
 footer hr.space-30 {

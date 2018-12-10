@@ -18,6 +18,8 @@ module.exports = {
       '/dist/js/flexslider/jquery.flexslider.min.js',
       '/dist/js/bootstrap/js/bootstrap.min.js',
       '/dist/js/imagesloaded.min.js',
+      '/dist/js/google.maps.min.js',
+      '/dist/js/isotope.min.js',
       '/dist/js/jquery.progress-counter.min.js',
       '/dist/js/jquery.tab-accordion.min.js',
       '/dist/js/smooth.scroll.min.js'

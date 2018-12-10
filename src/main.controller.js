@@ -80,7 +80,8 @@ module.exports.getProjects = (req, res) => {
     common: commonConfig,
     title: projectsConfig.title,
     state: projectsConfig.state,
-    description: projectsConfig.description
+    description: projectsConfig.description,
+    projects: projectsConfig.projects
   })
 }
 

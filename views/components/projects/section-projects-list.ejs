@@ -1,0 +1,36 @@
+<div class="section-empty">
+    <div class="container content">
+        <div class="maso-list list-sm-6">
+            <div class="navbar navbar-inner">
+                <div class="navbar-toggle"><i class="fa fa-bars"></i><span>MENU</span><i class="fa fa-angle-down"></i></div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav over inner ms-minimal maso-filters">
+                        <li class="active"><a data-filter="maso-item">All</a></li>
+                        <li><a data-filter="commercial">Commercial</a></li>
+                        <li><a data-filter="residential">Residential</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="maso-box row">
+                <% projects.forEach(function(project){ %>
+                <div data-sort="2" class="maso-item col-md-6 <%= project.categories %>">
+                        <div class="advs-box advs-box-side boxed-inverse" data-anima="fade-left" data-trigger="hover">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="img-box"><img src="<%= project.portfolioImg.src %>"
+                                            alt="<%= project.portfolioImg.alt %>"></div>
+                                </div>
+                                <div class="col-md-8">
+                                  <h3><%= project.name %></h3>
+                                    <hr class="anima">
+                                    <p><%= project.info %></p>
+                                    <a class="btn-text" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+    </div>
+</div>
