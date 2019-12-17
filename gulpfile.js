@@ -1,16 +1,14 @@
 'use strict'
 
-let gulp = require('gulp'),
-  autoprefixer = require('gulp-autoprefixer'),
-  cssnano = require('gulp-cssnano'),
-  uglify = require('gulp-uglify'),
-  concat = require('gulp-concat'),
-  imagemin = require('gulp-imagemin'),
-  rename = require('gulp-rename'),
-  runSequence = require('run-sequence'),
-  nodemon = require('gulp-nodemon'),
-  del = require('del'),
-  gutil = require('gulp-util')
+const gulp = require('gulp')
+const autoprefixer = require('gulp-autoprefixer')
+const cssnano = require('gulp-cssnano')
+const uglify = require('gulp-uglify')
+const imagemin = require('gulp-imagemin')
+const rename = require('gulp-rename')
+const runSequence = require('run-sequence')
+const nodemon = require('gulp-nodemon')
+const del = require('del')
 
 // Start:prod
 gulp.task('start:prod', function () {
@@ -79,11 +77,11 @@ gulp.task('min-scripts', function () {
 // Images
 gulp.task('images', function () {
   return gulp.src('public/images/**/*')
-    .pipe(imagemin({
-      optimizationLevel: 3,
-      progressive: true,
-      interlaced: true
-    }))
+    // .pipe(imagemin({
+    //   optimizationLevel: 3,
+    //   progressive: true,
+    //   interlaced: true
+    // }))
     .pipe(gulp.dest('public/dist/images'))
 })
 

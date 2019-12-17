@@ -79,7 +79,7 @@ html[xmlns] .flexslider .slides {
     display: block;
 }
 
-* html .flexslider .slides {
+html .flexslider .slides {
     height: 1%;
 }
 
@@ -135,7 +135,6 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav {
-    *
     height: 0;
 }
 
@@ -281,7 +280,6 @@ body .flex-direction-nav a.flex-next:before {
         margin: 0 6px;
         display: inline-block;
         zoom: 1;
-        *
         display: inline;
         height: auto !important;
     }
